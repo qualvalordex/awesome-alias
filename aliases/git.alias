@@ -1,0 +1,14 @@
+alias gi="git init"
+alias gs="git status"
+
+alias ga="git add"
+alias gall="git add ."
+
+alias gc="git commit -m"
+
+alias gck="git checkout"
+alias gcb="git checkout -b"
+
+alias gl='git log --decorate --pretty=format:"%C(yellow)%h%C(reset) | %C(cyan)%ad%C(reset) | %C(green)%-20an%C(reset) | %s %C(auto)%d%C(reset)" --date=format:"%d/%m/%Y %H:%M"'
+alias glo='git log --pretty=format:"Commit : %C(yellow)%h%C(reset)%nAutor  : %C(green)%an <%ae>%C(reset)%nData   : %C(cyan)%ad%C(reset)%nMensagem: %s%n" --date=format:"%d/%m/%Y %H:%M"'
+alias gls='git log --stat --decorate --pretty=format:"%C(yellow)%h%C(reset) %C(cyan)%ad%C(reset) %C(green)%an%C(reset)%n%s%n" --date=short'
