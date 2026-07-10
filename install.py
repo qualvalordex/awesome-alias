@@ -1,4 +1,5 @@
 from pathlib import Path
+from typing import Optional
 import os
 import sys
 
@@ -10,7 +11,7 @@ COMPATIBLE_SHELLS = {
 }
 
 
-def select_shell() -> str | None:
+def select_shell() -> Optional[str]:
     detected = Path(os.environ.get("SHELL", "")).name
 
     if detected in COMPATIBLE_SHELLS:
